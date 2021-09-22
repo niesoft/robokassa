@@ -10,7 +10,7 @@ class Robokassa {
 	{
 		$params = [
 			'MerchantLogin' => $this->username,
-			'DefaultSum' => $amount,
+			'OutSum' => $amount,
 			'InvoiceID' => $order_id,
 			'Description' => $description,
 			'SignatureValue' => $this->getSignature($amount, $order_id)
